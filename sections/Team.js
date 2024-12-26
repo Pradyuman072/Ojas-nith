@@ -44,6 +44,7 @@ const Team = () => {
 
           <div   data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>
             <Title title='Volunteers' className='title-bg' />
+            <Title title='Comming soon...' className='title-bg' />
           </div>
 
           <div  className='grid-4 py'>

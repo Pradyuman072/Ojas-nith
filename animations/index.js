@@ -7,6 +7,7 @@ export const preLoaderAnim = () => {
   tl.to("body", {
     duration: 0.1,
     ease: "power3.inOut",
+   
   })
     .to(".landing", {
       duration: 0.05,
@@ -20,14 +21,14 @@ export const preLoaderAnim = () => {
     .from(".texts-container span", {
       duration: 1.5,
       delay: 1,
-      y: 120,
+      y: -120,
       skewY: 15,
       stagger: 0.4,
       ease: "Power3.easeOut",
     })
     .to(".texts-container span", {
       duration: 1,
-      y: 140,
+      y: 0,
       skewY: -20,
       stagger: 0.2,
       ease: "Power3.easeOut",
@@ -45,7 +46,7 @@ export const preLoaderAnim = () => {
     .from(".landing__top .sub", {
       duration: 1,
       opacity: 0,
-      y: 100,
+      y: -100,
       ease: "expo.easeOut",
     })
     .to(
@@ -60,7 +61,7 @@ export const preLoaderAnim = () => {
     )
     .from(".landing__main .text", {
       duration: 2,
-      y: 120,
+      y: -120,
       opacity: 0,
       stagger: {
         amount: 2,
@@ -168,7 +169,7 @@ export const closeMenu = () => {
     })
     .to(".header-item", {
       duration: 0.5,
-      css: { background: "rgba(11,11,15,.8)" },
+      css: { background: "rgba(11,11,15,0.8)" },
     })
     .to(".hamburger-menu", {
       duration: 0.05,

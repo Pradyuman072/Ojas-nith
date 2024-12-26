@@ -177,7 +177,7 @@ $color-box-7 : #de8b3e;
             transform: translateY(0);
         }
         
-        .cards--two__tri {
+        .cards--two__circle {
           right: -40%;
           
           &:before {
@@ -192,57 +192,68 @@ $color-box-7 : #de8b3e;
         transition: all .2s ease;
       }
       
-      &__tri {
-        border-top: 220px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-right: 288px solid #fff;
-        opacity: .9;
-        position: absolute;
-        display: block;
-        top: 0;
-        right: -100%;
-        transition: all .3s ease-in-out;
-        
-        &:before {
-          border-top: 220px solid transparent;
-          border-bottom: 190px solid transparent;
-          border-right: 288px solid $color-box-3;
-          position: absolute;
-          content: '';
-          display: block;
-          top: -220px;
-          right: -612px;
-          transition: all .3s ease-in-out;
-          transition-delay: .2s;
-        }
-      }
+    //   &__circle {
+    //     width: 250px; // Set the width of the circle
+    //     height: 250px; // Set the height of the circle
+    //     background-color: #31849f; // Circle color
+    //     border-radius: 50%; // Make it a circle
+    //     opacity: .9;
+    //     position: absolute;
+    //     display: block;
+    //     bottom: 0;
+    //     right: -100%;
+    //     transition: all .3s ease-in-out;
+    //     &:before {
+    //         content: '';
+    //         width: 288px; // Set the width of the inner circle
+    //         height: 288px; // Set the height of the inner circle
+    //         background-color: $color-box-3; // Inner circle color
+    //         border-radius: 50%; // Make it a circle
+    //         position: absolute;
+    //         top: -288px; // Adjust position as needed
+    //         right: -288px; // Adjust position as needed
+    //         transition: all .3s ease-in-out;
+    //         transition-delay: .2s;
+    //     }
+    // }
       
-      &__rect {
-        width: 750px;
-        height: 200px;
-        background: #fff;
-        display: block;
-        position: absolute;
-        top: 175%;
-        left: -78%;
-        transform: rotate(30deg);
-        z-index: 5;
-        opacity: .9;
-        transition: all .3s ease-in-out;
-        
-        &:before {
+    &__rect {
+      width: 750px;
+      height: 200px;
+      background: linear-gradient(135deg, #ffffff, #f0f0f0); // Gradient background
+      display: block;
+      position: absolute;
+      top: 175%;
+      left: -78%;
+      z-index: 5;
+      opacity: 0.9;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); // Add shadow for depth
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+          transform: scale(1.05); // Slightly scale up on hover
+          opacity: 1; // Full opacity on hover
+      }
+  
+      &:before {
           content: '';
           display: block;
           width: 100%;
-          position: relative;
           height: 100%;
-          background: #01c283;
-          transform: translateY(200px);
+          background: linear-gradient(135deg, #01c283, #00b16a); // Gradient for the before element
+          position: absolute; // Change to absolute for proper layering
+          top: 0; // Align to the top
+          left: 0; // Align to the left
+          transform: translateY(200px); // Initial position
           z-index: 2;
-          transition: all .3s ease-in-out;
-          transition-delay: .1s;
-        }
+          transition: all 0.3s ease-in-out;
+          transition-delay: 0.1s;
       }
+  
+      &:hover:before {
+          transform: translateY(0); // Move up on hover
+      }
+  }
       
       ul {
         list-style: none;
@@ -582,7 +593,7 @@ $color-box-7 : #de8b3e;
   cursor: pointer;
 }
 .secondary-button {
-  background-color: #171e20;
+  background-color: #0c242a;
   box-shadow: none;
   color: $white;
   padding: 20px 60px;

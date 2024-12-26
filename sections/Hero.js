@@ -3,6 +3,7 @@ import {TitleSm } from "@/components/common/Title"
 import React from "react"
 import ShowCase from "./ShowCase"
 import AboutUs from "./AboutUs"
+import Tilt from "@/components/Tilt"
 const Hero = () => {
   return (
     <div className="" >
@@ -82,9 +83,15 @@ const Hero = () => {
 		</svg>
     	</div>
         <div data-aos="zoom-in" className='container'>
-          <h1 className='hero-title'> TEAM OJAS</h1>
+			<Tilt>
+				 <h1 className='hero-title'> TEAM OJAS</h1>
+			</Tilt>
+         
           <div className='sub-heading'>
-            <TitleSm title='Departmental Club of Electrical Engineering' className="title" />
+			<Tilt>
+				 <TitleSm title='Departmental Club of Electrical Engineering' className="title" />
+			</Tilt>
+           
           </div>
         </div>
 		<a className='home-page-btn'></a>
