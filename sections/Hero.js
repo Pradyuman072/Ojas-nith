@@ -5,6 +5,7 @@ import ShowCase from "./ShowCase"
 import AboutUs from "./AboutUs"
 import Tilt from "@/components/Tilt"
 const Hero = () => {
+	
   return (
     <div className="" >
       <section className='hero'>

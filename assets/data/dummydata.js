@@ -281,7 +281,7 @@ export const seconddata = [
       },
       {
         id: 3,
-        title: "Nitin Kumar",
+        title: "Nitin ",
       cover: "../images/nitin.webp",
       post: "Executive Members",
       handlegit: "https://www.linkedin.com/in/nitin-21767a2a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
